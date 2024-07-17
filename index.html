@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Super App Project</title>
+</head>
+<body>
+    <header>
+        <div class="center-div">
+            <div class="center-div-top">
+                <div class="logo">
+                    <img src="Image/ShopEasy.png" alt="">
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="ძიება">
+                    <img src="Image/Icon Right.png" alt="">
+                </div>
+                <div class="center-div-top-buttons">
+                    <div class="center-div-top-buttons-icons">
+                        <img src="Image/cart-shopping.png" alt="">
+                    </div>
+                    <div class="center-div-top-buttons-icons">
+                        <img src="Image/Frame 1.png" alt="">
+                    </div>
+                    <div class="center-div-top-buttons-login">
+                        <button>შესვლა</button>
+                    </div>
+                </div>
+            </div>
+            <div class="center-div-lower">
+                <div class="center-div-lower-main">
+                    <div class="burger-menu">
+                           <div>
+                               <img src="Image/icon-align-justify.png" alt="">
+                           </div>
+                        <span>ყველა კატეგორია</span>
+                    </div>
+                    <div class="carousel-wrap">
+                        <div class="carousel">
+                          <div class="carousel-slide">
+                            <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                            <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                            <div class="carousel-item"><a href="">ბავშვის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                            <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                            <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                          </div>
+                          <div class="carousel-slide">
+                            <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                            <div class="carousel-item"><a href="">წვეულება</a></div>
+                            <div class="carousel-item"><a href="">წიგნები</a></div>
+                            <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                            <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                            <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                            <div class="carousel-item"><a href="">ეზო & მცენარეების მოვლა</a></div>
+                          </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+                      </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="sale-slider">
+        <div class="sale-slider-center1 slide">
+            <div class="sale-slider-center-left">
+                <div class="sale-slider-center-left-main">
+                    <div>
+                        <h1>დაზოგე 50%-მდე საზაფხულო ასორტიმენტზე</h1>
+                    </div>
+                    <div>
+                        <h4>შეიძინე ყველაფერი შენი სახლისთვის, საუკეთესო <br>ფასად</h4>
+                    </div>
+                    <div class="slider-Icon">
+                        <a href="">სრულად სანახავად</a>
+                        <img src="Image/slider-Icon Right.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sale-slider-center-right">
+                <img src="Image/sale-slider-image1.png" alt="">
+            </div>
+        </div>
+        <div class="sale-slider-center2 slide">
+            <div class="sale-slider-center-left">
+                <div class="sale-slider-center-left-main">
+                    <div>
+                        <h1>დაზოგე 80%-მდე საზაფხულო ასორტიმენტზე</h1>
+                    </div>
+                    <div>
+                        <h4>შეიძინე ყველაფერი შენი სახლისთვის, საუკეთესო <br>ფასად</h4>
+                    </div>
+                    <div class="slider-Icon">
+                        <a href="">სრულად სანახავად</a>
+                        <img src="Image/slider-Icon Right.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sale-slider-center-right">
+                <img src="Image/sale-slider-image1.png" alt="">
+            </div>
+        </div>
+        <div class="sale-slider-center3 slide">
+            <div class="sale-slider-center-left">
+                <div class="sale-slider-center-left-main">
+                    <div>
+                        <h1>დაზოგე 100%-მდე საზაფხულო ასორტიმენტზე</h1>
+                    </div>
+                    <div>
+                        <h4>შეიძინე ყველაფერი შენი სახლისთვის, საუკეთესო <br>ფასად</h4>
+                    </div>
+                    <div class="slider-Icon">
+                        <a href="">სრულად სანახავად</a>
+                        <img src="Image/slider-Icon Right.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sale-slider-center-right">
+                <img src="Image/sale-slider-image1.png" alt="">
+            </div>
+        </div>
+        <div class="senter-buttons">
+        <button class="sale-slider-button prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="sale-slider-button next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+        <div class="sale-slider-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    
+
+
+    <script src="js/script.js"></script>
+    <script src="js/sale-slideer.js"></script>
+    <script src="https://kit.fontawesome.com/57425e250b.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
