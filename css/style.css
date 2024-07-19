@@ -158,11 +158,12 @@ header{
 
 .carousel-slide {
     display: flex;
-    min-width: 100%; 
+    min-width: 100%;
+    justify-content: space-evenly;
 }
 
 .carousel-item {
-    flex: 1 0 calc(100% / 7);
+    width: max-content;
     box-sizing: border-box;
     text-align: center;
 }
@@ -170,12 +171,12 @@ header{
 .carousel-item a {
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 14.5px;
 }
 
 .carousel-nav {
     position: absolute;
-    top: 25%; 
+    top: 40%; 
     transform: translateY(-50%); 
     background-color: #CBD2E0;
     color: white;
@@ -186,7 +187,9 @@ header{
     cursor: pointer;
     z-index: 100;
   }
-  
+#xx{
+    margin-left: -19px;
+}
   
 .carousel-nav.next {
     right: 5px;
