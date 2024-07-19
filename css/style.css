@@ -1,6 +1,15 @@
+@font-face {
+    font-family: figaro300;
+    src: url(../fonts/firago-latin-300-normal.ttf);
+  }
+  @font-face {
+    font-family: figaro500;
+    src: url(../fonts/firago-latin-500-normal.ttf);
+  }
 body{
     margin: 0px;
     box-sizing: border-box;
+    
 }
 a{
     text-decoration: none;
@@ -10,6 +19,7 @@ ul{
 }
 header{
     width: 100%;
+    font-family: "figaro300";
 }
 .center-div{
     border-bottom: 1px solid #CBD2E0;
@@ -20,14 +30,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-/* .logo p{
-    Width:96px;
-    Height:24px;
-    font-family:;
-    font-weight: 700;
-    font-size: 20px;
-    color: #008BFF;
-} */
+
 .search input{
     width: 650px;
     padding: 11px 12px;
@@ -38,6 +41,7 @@ header{
 .search input::placeholder{
     color: #A4A4A4;
     font-size: 16px;
+    font-family: "figaro300";
 }
 .search img{
     width: 24px;
@@ -61,6 +65,7 @@ header{
     border-style: none;
     border-radius: 6px;
     padding: 11px 24px;
+    font-family: "figaro300";
 
     
 }
@@ -75,7 +80,7 @@ header{
 }
 .burger-menu{
     display: flex;
-    width: 13%;
+    width: 14%;
     justify-content: space-between;
 }
 .burger-menu span{
@@ -140,40 +145,38 @@ header{
     width: 100%;
   } */
   
-  .carousel-wrap {
+.carousel-wrap {
     overflow: hidden;
-    width: 83%;
-    margin-right: 30px;
+    width: 86%;
     position: relative;
   }
-  
-  .carousel {
+.carousel {
     display: flex;
-    transition: transform 1s ease-in-out;
-  }
-  
-  .carousel-slide {
+    transition: transform 0.5s ease; 
+    will-change:transform;
+}
+
+.carousel-slide {
     display: flex;
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .carousel-item a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 16px;
-  }
-  
-  .carousel-item {
+    min-width: 100%; 
+}
+
+.carousel-item {
     flex: 1 0 calc(100% / 7);
     box-sizing: border-box;
     text-align: center;
-  }
-  
-  .carousel-nav {
+}
+
+.carousel-item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.carousel-nav {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25%; 
+    transform: translateY(-50%); 
     background-color: #CBD2E0;
     color: white;
     border-radius: 100px;
@@ -184,18 +187,16 @@ header{
     z-index: 100;
   }
   
-  .carousel-nav.prev {
-    left: 275px;
-  }
   
-  .carousel-nav.next {
-    right: 120px;
+.carousel-nav.next {
+    right: 5px;
   }
   
   /* section : sale-slider */
 
 .sale-slider {
     width: 100%;
+    font-family: "figaro300";
 }
 
 .sale-slider-center1, .sale-slider-center2, .sale-slider-center3 {
@@ -226,7 +227,7 @@ header{
 }
 
 .sale-slider-center-left-main div h1 {
-    font-size: 24px;
+    font-size: 23px;
     color: #002A4C;
 }
 
@@ -240,7 +241,13 @@ header{
 .sale-slider-center-left-main div a {
     color: #008BFF;
 }
-
+.sale-slider-center-right{
+    width: 50%;
+}
+.sale-slider-center-right img{
+    width: 100%;
+    height: 100%;
+}
 .slider-Icon {
     width: 218px;
     height: 45px;
@@ -304,4 +311,53 @@ header{
     background-color: #008BFF;
 }
 
+/* section everything-event */
+.everything-event{
+    width: 100%;
+}
+.everything-event-center{
+    height: 370px;
+    border-radius: 10px;
+   margin: 0px 100px;
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../Image/everything-event-image.png"); 
+} 
+.everything-event-detail{
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "figaro300";
+
+}
+.everything-event-detail div h2{
+    font-size: 24px;
+    color: #000000;
+    font-weight: 900;
+}
+.everything-event-detail div span{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 24px;
+}
+.everything-event-Icon{
+    width: 218px;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    background-color:#FFFFFF;
+    ;
+}
+.everything-event-Icon  a {
+    color: #000000;
+    font-weight: 600;
+    line-height: 22.4px;
+}
 
