@@ -201,9 +201,10 @@ header{
     display: none; 
     background-color: white;
     width: 100%;
-    max-height: calc(100vh - 40px); 
+    /* max-height: calc(100vh - 150px);  */
     overflow-y: auto;
     overflow-x: hidden; 
+    /* bottom: 0%; */
 }
 
 .category-item {
@@ -251,8 +252,8 @@ header{
 }
 
 header.active {
-    background-color: #f5f5f5;
-    transition: background-color 0.6s ease;
+    background-color: rgba(33, 32, 32, 0.571);
+    background: transparent;
 }
 
 .scrollable-content {
@@ -304,7 +305,38 @@ header.active {
     flex-direction: column;
     justify-content: space-evenly;
 }
+.sale-slider-center1 .sale-slider-center-left {
+    width: 100%;
+    background-image: url("../Image/sale-slider-image1.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.sale-slider-center1, .sale-slider-center3 .sale-slider-center-left div{
+    color: #FFFFFF;
+
+}
+.sale-slider-center1 .sale-slider-center-left .slider-Icon{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+}
+.sale-slider-center1 .sale-slider-center-left .slider-Icon a{
+    color: #008BFF;
+}
+.sale-slider-center3 .sale-slider-center-left {
+    width: 100%;
+    background-image: url("../Image//sale-slider-image3.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .sale-slider-center-left-main div h1 {
     font-size: 23px;
     color: #002A4C;
@@ -360,12 +392,10 @@ header.active {
 
 .sale-slider-button.prev {
     left: 85px;
-    border-radius: 3px 0 0 3px;
 }
 
 .sale-slider-button.next {
     right: 85px;
-    border-radius: 0 3px 3px 0;
 }
 .sale-slider-dot{
     position: relative;
@@ -385,10 +415,10 @@ header.active {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-/* დავაზუსტო */
-/* .active, .dot:hover {
+/*დავაზუსტო */
+.dot.active {
     background-color: #008BFF;
-} */
+}
 
 /* section everything-event */
 .everything-event{
