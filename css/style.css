@@ -27,13 +27,16 @@ header{
     padding: 24px 100px;
 }
 .center-div-top{
+    column-gap: 60px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center
+}
+.search{
+    width: 60%;
 }
 
 .search input{
-    width: 650px;
+    width: 90%;
     padding: 11px 12px;
     border-style:solid;
     border-radius: 6px;
@@ -90,61 +93,7 @@ header{
 
 }
 /* carousel */
-/* .carousel-wrap {
-    overflow: hidden;
-    width: 83%;
-    margin-right: 30px;
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .carousel-slide {
-    display: flex;
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-.carousel-item a{
-    text-decoration: none;
-    color:  #000000;
-    font-size: 16px;
-    
-}
-  
-  .carousel-item {
-    flex: 1 0 calc(100% / 7);
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
- .carousel-nav{ position: absolute;
-    top: 100px;
-    transform: translateY(-50%);
-    background-color: #CBD2E0;
-    color: white;
-    border-radius: 100px;
-    border: none;
-    font-size: 16px;
-    width: 24px;
-    cursor: pointer;
-    z-index: 100;
-  }
-  
-  .carousel-nav.prev {
-    left: 275px;
-  }
-  
-  .carousel-nav.next {
-    right: 120px;
-  }
-  
-  .carousel img {
-    width: 100%;
-  } */
+
   
 .carousel-wrap {
     overflow: hidden;
@@ -251,9 +200,14 @@ header{
     padding: 5px; 
 }
 
-header.active {
-    background-color: rgba(33, 32, 32, 0.571);
-    background: transparent;
+header.disabled {
+    background-color: #585c59;
+    pointer-events: none;
+    opacity: 0.9;
+}
+.hidden{
+    display: none;
+    visibility: hidden;
 }
 
 .scrollable-content {

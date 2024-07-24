@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.getElementById('carousel');
     const cancelIcon = document.querySelector('.cancel-icon');
     const header = document.querySelector('header');
+    const senterButtons = document.querySelector('.senter-buttons');
+    const saleSliderDot = document.querySelector('.sale-slider-dot');
     let currentIndex = 0;
 
     const categories = [
@@ -156,11 +158,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (categorySection.style.display === 'none' || categorySection.style.display === '') {
                 categorySection.style.display = 'flex';
                 categorySection.classList.add('active');
-                header.classList.add('active'); // Add active class to header
+                header.classList.add('disabled');
+                senterButtons.classList.add('hidden'); // Hide senter-buttons
+                saleSliderDot.classList.add('hidden'); // Hide sale-slider-dot
             } else {
                 categorySection.style.display = 'none';
                 categorySection.classList.remove('active');
-                header.classList.remove('active'); // Remove active class from header
+                header.classList.remove('disabled'); 
+                senterButtons.classList.remove('hidden'); // Show senter-buttons
+                saleSliderDot.classList.remove('hidden'); // Show sale-slider-dot
             }
         });
     }
@@ -169,7 +175,9 @@ document.addEventListener('DOMContentLoaded', () => {
         cancelIcon.addEventListener('click', () => {
             categorySection.style.display = 'none';
             categorySection.classList.remove('active');
-            header.classList.remove('active'); // Remove active class from header
+            header.classList.remove('disabled');
+            senterButtons.classList.remove('hidden'); // Show senter-buttons
+            saleSliderDot.classList.remove('hidden'); // Show sale-slider-dot
         });
     } else {
         console.error('cancelIcon element not found');
