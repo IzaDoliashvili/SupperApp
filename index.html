@@ -27,46 +27,56 @@
                     <div class="center-div-top-buttons-login">
                         <button>შესვლა</button>
                     </div>
-                </div>
-            </div>
- 
-            <div class="center-div-lower">
-                <div class="center-div-lower-main">
-                    <div class="burger-menu" id="burger-menu">
-                        <div>
-                            <img src="Image/icon-align-justify.png" alt="">
-                        </div>
-                        <span>ყველა კატეგორია</span>
-                    </div>
-                    <div class="carousel-wrap">
-                        <div class="carousel" id="carousel">
-                            <div class="carousel-slide" >
-                                <div class="carousel-item"><a href="">ფასდაკლება</a></div>
-                                <div class="carousel-item"><a href="">ტექნიკა</a></div>
-                                <div class="carousel-item"><a href="">ბავშვის მოვლა</a></div>
-                                <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
-                                <div class="carousel-item"><a href="">თავის მოვლა</a></div>
-                                <div class="carousel-item"><a href="">სათამაშოები</a></div>
-                                <div class="carousel-item"><a href="">ფიტნესი</a></div>
-                            </div>
-                            <div class="carousel-slide" >
-                                <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
-                                <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
-                                <div class="carousel-item"><a href="">წიგნები</a></div>
-                                <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
-                                <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
-                                <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
-                                <div class="carousel-item" id="xx"><a href="">ეზო & მცენარეების მოვლა</a></div>
-                            </div>
-                        </div>
-                        <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
-                        <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
-                    </div>
                     
                 </div>
-            </div> 
-            
-        </div>
+                <div class="hidden-button">
+                    <a href="javascript:void(0)">
+                        <img src="Image/icon-align-justify.png" alt="Menu">
+                    </a>
+                </div>
+                <div class="menu-container" id="menuContainer">
+                    <div class="menu-header">
+                        <!-- <span>Menu</span> -->
+                        <button id="closeButton">&times;</button>
+                    </div>
+                    <ul id="menuList"></ul>
+                </div>
+           </div>
+           <div class="center-div-lower">
+            <div class="center-div-lower-main">
+                <div class="burger-menu" id="burger-menu">
+                    <div>
+                        <img src="Image/icon-align-justify.png" alt="">
+                    </div>
+                    <span>ყველა კატეგორია</span>
+                </div>
+                <div class="carousel-wrap">
+                    <div class="carousel" id="carousel">
+                        <div class="carousel-slide" >
+                            <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                            <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                            <div class="carousel-item"><a href="">ბავშვის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                            <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                            <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                        </div>
+                        <div class="carousel-slide" >
+                            <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                            <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
+                            <div class="carousel-item"><a href="">წიგნები</a></div>
+                            <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                            <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                            <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                            <div class="carousel-item" id="xx"><a href="">ეზო & მცენარეების მოვლა</a></div>
+                        </div>
+                    </div>
+                    <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                
+            </div>
+        </div> 
     </header>
     <div class="category-section" id="category-section">
         <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
@@ -154,7 +164,8 @@
     <script src="js/header-nav.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sale-slideer.js"></script>
-    <script src="https://kit.fontawesome.com/57425e250b.js" crossorigin="anonymous"></script>
+    <script src="js/mobile-burger-menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
 </body>
 </html>
