@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             headline: 'ბავშვის მოვლა',
             image: 'Image/category-item-image/2.png',
+            link: 'baby-care.html',
             items: [
                 { name: 'ბავშვის კვება', link: '#' },
                 { name: 'საბავშვო ინვენტარი', link: '#' },
@@ -160,12 +161,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 categorySection.classList.add('active');
                 header.classList.add('disabled');
                 senterButtons.classList.add('hidden'); // Hide senter-buttons
-                saleSliderDot.classList.add('hidden'); // Hide sale-slider-dot
+                saleSliderDot.classList.add('hidden'); 
             } else {
                 categorySection.style.display = 'none';
                 categorySection.classList.remove('active');
                 header.classList.remove('disabled'); 
-                senterButtons.classList.remove('hidden'); // Show senter-buttons
+                senterButtons.classList.remove('hidden'); 
                 saleSliderDot.classList.remove('hidden'); // Show sale-slider-dot
             }
         });
@@ -177,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             categorySection.classList.remove('active');
             header.classList.remove('disabled');
             senterButtons.classList.remove('hidden'); // Show senter-buttons
-            saleSliderDot.classList.remove('hidden'); // Show sale-slider-dot
+            saleSliderDot.classList.remove('hidden'); 
         });
     } else {
         console.error('cancelIcon element not found');
@@ -213,6 +214,20 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('carousel element not found');
     }
+
+    document.addEventListener('click', event => {
+        if (event.target.matches('.category-header h3')) {
+            const categoryHeadline = event.target.textContent.trim();
+            console.log('Clicked category:', categoryHeadline); // Debug log
+            const category = categories.find(cat => cat.headline === categoryHeadline);
+            if (category && category.link) {
+                console.log('Navigating to:', category.link); // Debug log
+                window.location.href = category.link;
+            } else {
+                console.error('Category not found or link missing for headline:', categoryHeadline);
+            }
+        }
+    });
 
     renderCategories();
 });

@@ -625,3 +625,512 @@ header.disabled {
         font-size: 10px;
     }
 }
+
+
+
+/* .new-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.new-page .item {
+    width: 30%;
+    margin: 1.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.new-page .item img {
+    width: 100%;
+    height: auto;
+}
+
+.new-page .item h4 {
+    margin: 10px 0;
+} */
+
+
+/* baby-care css */
+
+/* section baby-care-popular */
+.baby-care-sale{
+    width: 100%;
+    font-family: "figaro300";
+}
+.baby-care-sale-container{
+    width: 90%;
+    margin: auto;
+}
+.baby-care-sale-container-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.baby-care-sale-container-head a{
+    font-size: 14px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.baby-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.baby-sale-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+}
+
+.baby-sale-card  img {
+    width: 100%;
+    height: auto;
+}
+
+.baby-sale-card .rating {
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #717D96;
+}
+
+.baby-sale-card .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid  #EFEFEF;
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.baby-sale-card .details {
+    padding: 20px 10px;
+}
+
+.baby-sale-card .brand {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.baby-sale-card .description {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.baby-sale-card .price {
+    font-size:20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.baby-sale-card .old-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #999;
+    font-size: 16px;
+   
+}
+
+.baby-sale-card .discount {
+    padding: 5px;
+    background-color: #FF3333;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+
+    
+}
+
+.baby-sale-card .button {
+    margin-top: 10px;
+}
+
+.baby-sale-card .button button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.baby-sale-card .button button:hover {
+    background-color: #0056b3;
+}
+
+/* section baby-care-popular */
+
+.baby-care-popular{
+    width: 100%;
+    font-family: "figaro300";
+    
+}
+.baby-care-popular-container{
+   width: 90%;
+   margin: auto;
+}
+.baby-care-popular-container-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.baby-popular-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.baby-care-popular-container-head  a{
+    font-size: 14px;
+    color: #000000;
+    text-decoration: underline;
+}
+.baby-popular-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+}
+.baby-popular-card  img {
+    max-width: 100%;
+}
+.baby-popular-card h2 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.baby-popular-card .rating{
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #717D96;
+}
+
+
+.baby-popular-card  .brand {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2D3648;
+}
+.baby-popular-card .description {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.baby-popular-card .price {
+    font-size: 20px;
+    
+    font-weight: 800;
+    color: #2D3648;
+
+}
+.baby-popular-card  .details {
+    padding: 20px 10px;
+}
+.baby-popular-card  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid  #EFEFEF;
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.baby-popular-card  .button {
+    margin-top: 10px;
+}
+
+.baby-popular-card .button button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.baby-popular-card .button button:hover {
+    background-color: #0056b3;
+}
+
+/* section baby-care-sea */
+
+
+.baby-care-sea{
+    width: 100%;
+    font-family: "figaro300";
+    
+}
+ .baby-care-sea-container {
+   width: 90%;
+   margin: auto;
+}
+
+.baby-care-sea-container-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.baby-sea-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.baby-care-sea-container-head a{
+    font-size: 14px;
+    color: #000000;
+    text-decoration: underline;
+}
+.baby-sea-card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+}
+.baby-sea-card img {
+    max-width: 100%;
+}
+.sea-img{
+    height: 220px;
+}
+.baby-sea-card .rating{
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #717D96;
+}
+.baby-sea-card  .brand {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2D3648;
+}
+.baby-sea-card .description {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.baby-sea-card .price {
+    font-size: 20px;
+    
+    font-weight: 800;
+    color: #2D3648;
+
+}
+.baby-sea-card .details {
+    padding: 20px 10px;
+}
+.baby-sea-card .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid  #EFEFEF;
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.baby-sea-card .button {
+    margin-top: 10px;
+}
+
+.baby-sea-card .button button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.baby-sea-card .button button:hover {
+    background-color: #0056b3;
+} 
+#baby-care-hidden-button{
+    display: none;
+}
+
+/* baby-care responsive */
+@media (max-width: 900px){
+    .baby-card-container  {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        height: auto;
+        padding: 10px ;
+        box-sizing: border-box;
+    }
+    
+    .baby-popular-card-container{
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        height: auto;
+        padding: 10px ;
+        box-sizing: border-box;
+
+    }
+    .baby-sea-card-container  {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        height: auto;
+        padding: 10px ;
+        box-sizing: border-box;
+    }
+   
+
+}
+
+
+@media (max-width: 750px){
+    
+    .baby-sale-card , 
+    .baby-popular-card , 
+    .baby-sea-card {
+        min-width: calc(100% - 200px);
+        scroll-snap-align: start;
+    
+    }
+
+}
+@media (max-width: 550px){
+        .baby-sale-card , 
+        .baby-popular-card , 
+        .baby-sea-card{
+            min-width: calc(100% - 150px);
+            scroll-snap-align: start;
+            max-height: 285px;
+        }
+
+   
+    .baby-care-sale-container-head , 
+    .baby-care-popular-container-head ,
+    .baby-care-sea-container-head{
+        font-size: 8px;
+    }
+    .baby-sale-card .details,
+    .baby-popular-card  .details ,
+    .baby-sea-card .details{
+        padding: 5px ;
+    }
+    .baby-sale-card .brand,
+    .baby-popular-card .brand,
+    .baby-sea-card .brand{
+        font-size: 12px;
+    }
+    .baby-sale-card .description,
+    .baby-popular-card .description,
+    .baby-sea-card .description {
+        font-size: 10px;
+    }
+    .baby-sale-card .price,
+    .baby-popular-card .price,
+    .baby-sea-card .price {
+        font-size: 12px;
+    }
+    .baby-sale-card .old-price,
+    .baby-popular-card .old-price,
+    .baby-sea-card .old-price{
+        font-size: 10px;
+        margin-left: 0px;
+
+    }
+    .baby-sale-card .discount{
+        font-size: 12px;
+        margin-left: 0px;
+        padding: 3px;
+    }
+    .baby-sale-card .button,
+    .baby-popular-card .button,
+    .baby-sea-card .button {
+        display: none
+    }
+    #baby-care-hidden-button{
+        display:flex ;
+        margin-top: 5px;
+    }
+    #baby-care-hidden-button a{
+        width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center
+    }
+    #baby-care-hidden-button a img{
+        width: 16px;
+        margin-right: 5px;
+
+    }
+    .baby-sale-card .rating,
+    .baby-popular-card .rating,
+    .baby-sea-card .rating {
+        font-size: 12px;
+    }
+    .baby-sale-card .heart-icon
+    .baby-popular-card .heart-icon
+    .baby-sea-card .heart-icon{
+        padding: 5px 7px;
+        font-size: 15px;
+        top: 7px;
+        right: 7px;
+    
+    }
+    .sea-img {
+        height: 140px;
+    }
+
+}

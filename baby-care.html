@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბავშვის მოვლა</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-    <title>Super App Project</title>
 </head>
 <body>
     <header>
@@ -38,7 +36,6 @@
                 </div>
                 <div class="menu-container" id="menuContainer">
                     <div class="menu-header">
-                        <!-- <span>Menu</span> -->
                         <button id="closeButton">&times;</button>
                     </div>
                     <ul id="menuList"></ul>
@@ -57,7 +54,7 @@
                         <div class="carousel-slide" >
                             <div class="carousel-item"><a href="">ფასდაკლება</a></div>
                             <div class="carousel-item"><a href="">ტექნიკა</a></div>
-                            <div class="carousel-item"><a href="baby-care.html">ბავშვის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">ბავშვის მოვლა</a></div>
                             <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
                             <div class="carousel-item"><a href="">თავის მოვლა</a></div>
                             <div class="carousel-item"><a href="">სათამაშოები</a></div>
@@ -86,90 +83,39 @@
         
     </div>
     </div>
-    <div id="main-content"></div>
-    <section class="sale-slider">
-        <div class="sale-slider-center1 slide">
-            <div class="sale-slider-center-left">
-                    <div>
-                        <h1>შექმენით უნიკალური ნამუშევრები</h1>
-                    </div>
-                    <div>
-                        <h4>შეიძინეთ თიხით ძერწვისთვის საჭირო მასალა</h4>
-                    </div>
-                    <div class="slider-Icon">
-                        <a href="">დაიწყე შოპინგი</a>
-                        <img src="Image/slider-Icon Right.png" alt="">
-                    </div>
-                
+    <section class="baby-care-sale">
+        <div class="baby-care-sale-container">
+            <div class="baby-care-sale-container-head">
+                <h2>-50% ფასდაკლება ბავშვის ტანსაცმელზე</h2>
+                <a href="">სრულად</a>
             </div>
-        </div>
-        <div class="sale-slider-center2 slide">
-            <div class="sale-slider-center-left">
-                <div class="sale-slider-center-left-main">
-                    <div>
-                        <h1>დაზოგე 80%-მდე საზაფხულო ასორტიმენტზე</h1>
-                    </div>
-                    <div>
-                        <h4>შეიძინე ყველაფერი შენი სახლისთვის, საუკეთესო <br>ფასად</h4>
-                    </div>
-                    <div class="slider-Icon">
-                        <a href="">სრულად სანახავად</a>
-                        <img src="Image/slider-Icon Right.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="sale-slider-center-right">
-                <img src="Image/sale-slider-image2.png" alt="">
-            </div>
-        </div>
-        <div class="sale-slider-center3 slide">
-            <div class="sale-slider-center-left">
-                 <div>
-                     <h1>ყველაფერი თქვენი ოთახის ყვავილებისთვის</h1>
-                </div>
-                <div>
-                    <h4>იზრუნეთ მათზე სიყვარულით</h4>
-                </div>
-            </div>
-            
-        </div>
-        <div class="senter-buttons">
-        <button class="sale-slider-button prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="sale-slider-button next" onclick="plusSlides(1)">&#10095;</button>
-        </div>
-        <div class="sale-slider-dot">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <div class="baby-card-container" id="babycardContainer"></div>
         </div>
     </section>
-    <section class="everything-event">
-        <div class="everything-event-center">
-
-            <div class="everything-event-detail">
-                <div>
-                    <h2>ყველაფერი დაუვიწყარი საზაფხულო<br> წვეულებებისთვის</h2>
-                </div>
-                <div> 
-                    <span>შეიძინე ჩვენთან საუკეთესო ფასად</span>
-                </div>
-                <div class="everything-event-Icon">
-                    <a href="">სრულად სანახავად</a>
-                    <img src="Image/everything-event-Icon.png" alt="">
-                </div>
-               
-
+    <section class="baby-care-popular">
+        <div class="baby-care-popular-container">
+            <div class="baby-care-popular-container-head">
+                <h2>ყველაზე მოთხოვნადი პროდუქცია</h2>
+                <a href="">სრულად</a>
             </div>
+            <div class="baby-popular-card-container" id="babypopularcardContainer"></div>
+        </div>
+    </section>
+    <section class="baby-care-sea">
+        <div class="baby-care-sea-container">
+            <div class="baby-care-sea-container-head">
+                <h2>ზღვისთვის საჭირო პროდუქცია</h2>
+                <a href="">სრულად</a>
+            </div>
+            <div class="baby-sea-card-container" id="babyseacardContainer"></div>
         </div>
     </section>
     
     
-
     <script src="js/header-nav.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/sale-slideer.js"></script>
     <script src="js/mobile-burger-menu.js"></script>
+    <script src="js/baby-care.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
 </body>
 </html>

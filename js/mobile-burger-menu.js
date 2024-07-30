@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuData = [
         { icon: 'fas fa-tv', label: 'ტექნიკა' },
-        { icon: 'fas fa-baby', label: 'ბავშის მოვლა',submenu: ['ბავშვის მოვლა', 'ბავშვის კვება', 'საბავშო ინვენტარი'] },
+        { icon: 'fas fa-baby', label: 'ბავშის მოვლა',submenu: ['ბავშვის მოვლა', 'ბავშვის კვება', 'საბავშო ინვენტარი'] , link: 'baby-care.html',},
         { icon: 'fas fa-home', label: 'სახლი&მოვლა' },
         { icon: 'fas fa-spa', label: 'თავის მოვლა' },
         { icon: 'fas fa-car', label: 'სათამაშები' },
@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     subli.textContent = subitem;
                     if (index === 0) {
                         subli.style.fontWeight = 'bold';
+                        subli.addEventListener('click', () => {
+                            window.location.href = item.link;
+                        });
                     }
                     submenuList.appendChild(subli);
                 });
@@ -75,4 +78,5 @@ document.addEventListener('DOMContentLoaded', function() {
             submenuContainer.classList.remove('show');
         }
     });
+   
 });
