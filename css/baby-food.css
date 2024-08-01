@@ -1,0 +1,105 @@
+@font-face {
+    font-family: figaro300;
+    src: url(../fonts/firago-latin-300-normal.ttf);
+  }
+  @font-face {
+    font-family: figaro500;
+    src: url(../fonts/firago-latin-500-normal.ttf);
+  }
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+}
+.filter-section {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+.filter-section h2 {
+    margin-top: 0;
+}
+.filter-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+.filter-section .filter-group {
+    margin-bottom: 20px;
+}
+.product-section {
+    width: 80%;
+    padding: 20px;
+}
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+.product-card h3 {
+    margin: 10px 0;
+}
+.product-card p {
+    margin: 10px 0;
+    color: #333;
+}
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.product-card button:hover {
+    background-color: #0056b3;
+}
+.stars {
+    color: orange;
+}
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid  #EFEFEF;
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.heart-icon img {
+    width: 100%;
+    height: auto;
+}
+#baby-care-hidden-button{
+    display: none;
+}

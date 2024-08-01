@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="css/baby-food.css">
+    
+            
+        
+</head>
+<body>
+
+<div class="container">
+    <div class="filter-section">
+        <div class="filter-group">
+            <h2>Price</h2>
+            <label>
+                Min: <input type="number" id="minPrice" class="filter price-input">
+            </label>
+            <label>
+                Max: <input type="number" id="maxPrice" class="filter price-input">
+            </label>
+        </div>
+        <div class="filter-group">
+            <h2>Brand</h2>
+            <label>
+                <input type="checkbox" class="filter brand" data-filter="HIPP">
+                HIPP
+            </label>
+            <label>
+                <input type="checkbox" class="filter brand" data-filter="BabyBio">
+                BabyBio
+            </label>
+            <label>
+                <input type="checkbox" class="filter brand" data-filter="Plasmon">
+                Plasmon
+            </label>
+            <label>
+                <input type="checkbox" class="filter brand" data-filter="Humana">
+                Humana
+            </label>
+            <label>
+                <input type="checkbox" class="filter brand" data-filter="Heinz">
+                Heinz
+            </label>
+            <label>
+                <input type="checkbox" class="filter brand" data-filter="Nestle">
+                Nestle
+            </label>
+        </div>
+        <div class="filter-group">
+            <h2>Age</h2>
+            <label>
+                <input type="checkbox" class="filter age" data-filter="0-3 months">
+                0-3 months
+            </label>
+            <label>
+                <input type="checkbox" class="filter age" data-filter="3-6 months">
+                3-6 months
+            </label>
+            <label>
+                <input type="checkbox" class="filter age" data-filter="6-9 months">
+                6-9 months
+            </label>
+            <label>
+                <input type="checkbox" class="filter age" data-filter="9-12 months">
+                9-12 months
+            </label>
+            <label>
+                <input type="checkbox" class="filter age" data-filter="1-3 years">
+                1-3 years
+            </label>
+            <label>
+                <input type="checkbox" class="filter age" data-filter="3-5 years">
+                3-5 years
+            </label>
+        </div>
+        <div class="filter-group">
+            <h2>Bulk</h2>
+            <label>
+                <input type="checkbox" class="filter bulk" data-filter="15-30 g">
+                15-30 g
+            </label>
+            <label>
+                <input type="checkbox" class="filter bulk" data-filter="75-100 g">
+                75-100 g
+            </label>
+            <label>
+                <input type="checkbox" class="filter bulk" data-filter="100-300 g">
+                100-300 g
+            </label>
+            <label>
+                <input type="checkbox" class="filter bulk" data-filter="300-500 g">
+                300-500 g
+            </label>
+            <label>
+                <input type="checkbox" class="filter bulk" data-filter="500-1000 g">
+                500-1000 g
+            </label>
+        </div>
+        <div class="filter-group">
+            <h2>Rating</h2>
+            <label>
+                <input type="checkbox" class="filter rating" data-filter="5">
+                <span class="stars">★★★★★</span>
+            </label>
+            <label>
+                <input type="checkbox" class="filter rating" data-filter="4">
+                <span class="stars">★★★★☆</span>
+            </label>
+            <label>
+                <input type="checkbox" class="filter rating" data-filter="3">
+                <span class="stars">★★★☆☆</span>
+            </label>
+            <label>
+                <input type="checkbox" class="filter rating" data-filter="2">
+                <span class="stars">★★☆☆☆</span>
+            </label>
+            <label>
+                <input type="checkbox" class="filter rating" data-filter="1">
+                <span class="stars">★☆☆☆☆</span>
+            </label>
+        </div>
+    </div>
+    
+    <div class="product-section">
+        <div class="product-grid" id="productGrid">
+            
+        </div>
+    </div>
+</div>
+
+<script src="js/baby-food.js"></script>
+
+</body>
+</html>
+
+
+
+
