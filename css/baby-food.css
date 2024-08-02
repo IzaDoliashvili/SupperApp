@@ -9,7 +9,7 @@
 body{
     margin: 0px;
     box-sizing: border-box;
-    
+    font-family: figaro300;
     
 }
 a{
@@ -21,7 +21,7 @@ ul{
 }
 
 
-.container {
+.baby-food-container {
     display: flex;
     width: 100%;
 }
@@ -32,6 +32,7 @@ ul{
 }
 .filter-section h2 {
     margin-top: 0;
+    font-size: 16px;
 }
 .filter-section label {
     display: block;
@@ -40,11 +41,11 @@ ul{
 .filter-section .filter-group {
     margin-bottom: 20px;
 }
-.product-section {
+.baby-food-product-section {
     width: 80%;
     padding: 20px;
 }
-.product-grid {
+.baby-food-product-conteiner {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -72,13 +73,18 @@ ul{
     margin: 10px 0;
     color: #333;
 }
-.product-card button {
+.button{
+    width: 100%;
+}
+.button button{
     background-color: #007bff;
     color: white;
+    font-family: figaro500;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
 }
 .product-card button:hover {
     background-color: #0056b3;
@@ -88,8 +94,8 @@ ul{
 }
 .heart-icon {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    /* top: 10px;
+    right: 10px; */
     border: 1px solid  #EFEFEF;
     border-radius: 100px;
     padding: 5px 10px;
@@ -102,4 +108,33 @@ ul{
 }
 #baby-care-hidden-button{
     display: none;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 100%;
+}
+.brand , .price{
+    font-family: "firago500";
+    color: #2D3648;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.description{
+    color: #717D96;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.rating {
+    color:  #717D96;
+    font-size: 16px;
+    font-family: figaro500;
+
+}
+.rating i{
+    color:  #717D96;
+    font-size: 10px;
 }

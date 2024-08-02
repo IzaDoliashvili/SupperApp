@@ -56,7 +56,7 @@ const products = [
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const productGrid = document.getElementById('productGrid');
+    const babyfoodproduct = document.getElementById('baby-product-conteiner');
     const filters = document.querySelectorAll('.filter');
     const priceInputs = document.querySelectorAll('.price-input');
 
@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         productCard.innerHTML = `
             <img src="${product.image}" alt="${product.description}">
             <div class="rating"><i class="fas fa-star"></i> ${product.rating}.0</div>
+            
             <div class="heart-icon">
                 <img src="../Image/baby-care-image/Shape.png" alt="">
             </div>
@@ -91,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        productGrid.appendChild(productCard);
+        babyfoodproduct.appendChild(productCard);
     });
 
     filters.forEach(filter => {
