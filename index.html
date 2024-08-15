@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
     <title>Super App Project</title>
@@ -27,7 +28,7 @@
                         <img src="Image/Frame 1.png" alt="">
                     </div>
                     <div class="center-div-top-buttons-login">
-                        <button>შესვლა</button>
+                        <button id="loginButton">შესვლა</button>
                     </div>
                     
                 </div>
@@ -84,6 +85,85 @@
         <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
     <div class="scrollable-content">
         
+        
+    </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="authorization-container" id="authorization-form-container">
+        <div class="authorization-container-center">
+        <h2>გაიარეთ ავტორიზაცია</h2>
+            <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
+        
+        
+        <div class="tabs">
+            <button class="tab active" id="authTab">ავტორიზაცია</button>
+            <button class="tab" id="regTab">რეგისტრაცია</button>
+        </div>
+
+        <form id="authorization-form">
+            <div class="form-group">
+                <input type="text" id="email-username" name="email-username" placeholder="მეილი / ტელ.ნომერი" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="პაროლი" required>
+                <i class="toggle-password" id="togglePassword"></i>
+            </div>
+            <div class="form-footer">
+                <a href="#" class="forgot-password">დაგავიწყდა პაროლი?</a>
+                <button type="submit">შესვლა</button>
+            </div>
+        </form>
+
+        <div class="divider">
+            <hr>
+            <span>ან</span>
+            <hr>
+        </div>
+
+        <div class="social-login">
+            <a class="social-btn facebook-btn"><img src="Image/reg-image/image 1.png" alt="">
+                Facebook-ით შესვლა</a>
+            <a class="social-btn google-btn"><img src="Image/reg-image/image 2.png" alt="">
+                Google-ით შესვლა</a>
+        </div>
+    </div>
+    </div>
+    <div class="registration-container" id="registration-form-container">
+        <div class="registration-container-center">
+        <h2>გაიარე რეგისტრაცია</h2>
+        <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
+        <div class="tabs">
+            <button class="tab " id="authTab">ავტორიზაცია</button>
+            <button class="tab active" id="regTab">რეგისტრაცია</button>
+        </div>
+        <form id="registration-form">
+            <div class="form-group">
+                <input type="text" id="fullname" name="fullname" placeholder="სახელი, გვარი" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email"placeholder="მეილი" required>
+                <div id="email-error" class="error-message"></div>
+
+            </div>
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="ტელეფონის ნომერი" required>
+            </div>
+            <div id="pass-confirm">
+            <div class="form-group" >
+                <input type="password" id="password" name="password" placeholder="პაროლი" required>
+                <div id="password-error" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="გაიმეორე პაროლი" required>
+                <div id="confirm-password-error" class="error-message"></div>
+            </div>
+            </div>
+            <div class="form-group">
+                <span>რეგისტრაციის ღილაკზე დაჭერით ეთანხმებით <a href="">წესებს და პირობებს</a></span>
+            </div>
+            <button type="submit">რეგისტრაცია</button>
+        </form>
     </div>
     </div>
     <div id="main-content"></div>
@@ -166,6 +246,7 @@
     
 
     <script src="js/header-nav.js"></script>
+    <script src="js/registration.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sale-slideer.js"></script>
     <script src="js/mobile-burger-menu.js"></script>
